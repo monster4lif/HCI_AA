@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: rgb(64, 66, 68);
+}
+
+body h1 {
+    color: #363F45;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3em;
+}
+
+#loader {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: lightsteelblue;
+    height: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    object-fit: cover;
+}
