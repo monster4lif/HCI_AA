@@ -123,9 +123,9 @@ h2, h3 {
   padding: 10%;
 }
 
-.intro{
+/* .intro{
     
-}
+} */
 .showcase{
   background-image: url("images/t_shirt_design_marin.jpg");
   background-position: center;
@@ -135,11 +135,12 @@ h2, h3 {
   color: white;
 }
 .showcaseStore{
-  background-image: url("images/shopify.jpg");
+  background-image: url("images/shopify_no_white.jpg");
   background-position: center;
   background-origin: inherit;
+  background-repeat: no-repeat;
   text-align: center;
-  padding: 20%;
+  padding: 10%;
   color: white;
 }
 .suninfo, .showcase{
