@@ -5,6 +5,11 @@ var pages = ['homepage', 'store', 'community', 'about', 'news']
 
 $(window).load(function () {
     $("#loader").delay(1000).fadeOut("slow");
+  for (i = 0; i < pages.length; i++) {
+    console.log(i);
+    document.getElementsByClassName(pages[i])[0].style.display = 'none';
+  }
+  document.getElementsByClassName('homepage')[0].style.display = "initial";
 });
 
 function displayLogin() {
@@ -16,9 +21,9 @@ function displayLogin() {
 // Open a webpage after clicking the hyperlink
 function ShowDiv(div) {
   var i;
-  console.log(i);
+  // console.log(i);
   for (i = 0; i < pages.length; i++){
-    console.log(i);
+    // console.log(i);
     document.getElementsByClassName(pages[i])[0].style.display = 'none';
   }
   document.getElementsByClassName(div)[0].style.display = "inherit";
