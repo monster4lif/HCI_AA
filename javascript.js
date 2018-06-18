@@ -1,8 +1,10 @@
 console.log('Hello World!')
 console.log(document.activeElement)
+var refresh = 0;
+console.log(refresh)
 
 $(window).load(function () {
-    $("#loader").delay(3000).fadeOut("fast");
+    $("#loader").delay(1000).fadeOut("slow");
 });
 
 function displayLogin() {
