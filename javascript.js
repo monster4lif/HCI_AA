@@ -19,9 +19,20 @@ function displayLogin() {
     alert(`Welcome, ${person}`);
 }
 
-// Open a webpage after clicking the hyperlink
+// Open a webpage after clicking the hyperlink, and immediately scrolling to the top of the page
 function ShowDiv(div) {
   var i;
+  let container = document.getElementById('menu');
+  let links = container.getElementsByClassName('button');
+
+  // Have the current page change colour in the navigation bar
+  for (let i = 0; i<links.length; i++) {
+    links[i].addEventListener('click', function () {
+      let activeButton = document.getElementsByClassName('active');
+      activeButton[0].className = activeButton[0].className.replace('active', '');
+      this.className += ' active';
+    });
+  }
   // console.log(i);
   for (i = 0; i < pages.length; i++){
     // console.log(i);
@@ -30,3 +41,6 @@ function ShowDiv(div) {
   window.scrollTo(0,0);
   document.getElementsByClassName(div)[0].style.display = "inherit";
 }
+
+
+
