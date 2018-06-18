@@ -26,21 +26,5 @@ function ShowDiv(div) {
     // console.log(i);
     document.getElementsByClassName(pages[i])[0].style.display = 'none';
   }
-  window.scrollTo(0,0);
   document.getElementsByClassName(div)[0].style.display = "inherit";
-}
-
-// Get the container element
-var btnContainer = document.getElementsByClassName("menu");
-
-// Get all buttons with class="btn" inside the container
-var btns = btnContainer.getElementsByClassName("navigation");
-
-// Loop through the buttons and add the active class to the current/clicked button
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function () {
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
-  });
 }
