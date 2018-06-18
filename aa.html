@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
     <title>Adam &amp; Aoki</title>
@@ -9,27 +9,21 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
     <script src="javascript.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta charset="UTF-8">
 </head>
 	<body>
-<<<<<<< HEAD
+		<!-- Comment out the loader screen for improving programming efficiency -->
 		<!-- <div id="loader">
-        <img src="images/loading-gif.gif" width="80%">
-    </div> -->
-=======
-		<div id="loader">
-        <img src="images/loading-gif.gif" style="width:100%;" alt="loading gif">
-    </div>
->>>>>>> 7171462a50462cac324b308cf47eaaa8fec13ef4
+        	<img src="images/loading-gif.gif" width="80%">
+    	</div> -->
 		<div class="menu">
-			<a onclick="ShowDiv('homepage')">A&amp;A</a>
-			<a onclick="ShowDiv('homepage')">Home</a>
-			<a onclick="ShowDiv('store')">Store</a>
-			<a onclick="ShowDiv('community')">Community</a>
-			<a onclick="ShowDiv('news')">News</a>
-			<a onclick="ShowDiv('about')">About</a>
+			<a onclick="ShowDiv('homepage')" class="navigation">A&amp;A</a>
+			<a onclick="ShowDiv('homepage')" class="navigation">Home</a>
+			<a onclick="ShowDiv('store')" class="navigation">Store</a>
+			<a onclick="ShowDiv('community')" class="navigation">Community</a>
+			<a onclick="ShowDiv('news')" class="navigation">News</a>
+			<a onclick="ShowDiv('about')" class="navigation">About</a>
 			<div class="search-container">
-					<button type="submit" onclick="displayLogin()">
+					<button type="submit"onclick="displayLogin()">
 							<i class="material-icons" style="float: left;" >account_circle </i>
 					</button>
 					<button type="submit">
@@ -68,19 +62,21 @@
 			where functionality meets fashion.</h2>
 		<p>Change the way you interact with clothing.</p>
 	</div>
-
+	<a href="https://www.shopify.com" target="_blank" alt = "A link providind acces to shopify.com">
+		<h2 style="text-align: center; bottom: 50%">Find our product on Shopify</h2>
+	</a>
 	<div class="showcaseStore">
-		<!-- <h2>Our product</h2> -->
+			
 	</div>
 
 	<div class="information">
-		<h2>The T-Shirts that we sell change color when coming into contact with the harmful
-		radiation of the sun. This will help you be more aware of the state of your skin,
-		which helps you protect your skin!</h2>
-		<h3>With this product, you know when to avoid the sun!</h3>
+		<h2>Currently, we're only available online, but you can find Adam & Aoki in these stores very soon!</h2>
+		<h3>H&M <br>
+		Zeeman</h3>
 
 	</div>
-	<div class="suninfo">
+	<div class="showcase">
+		<h3>Want to know about the science of the Adam & Aoki? Click <u onclick="ShowDiv('about')">here</u> to find out!</h3>
 	</div>
 </div>
 <div class="about">

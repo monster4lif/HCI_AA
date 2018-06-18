@@ -135,11 +135,12 @@ h2, h3 {
   color: white;
 }
 .showcaseStore{
-  background-image: url("images/shopify.jpg");
+  background-image: url("images/shopify_nowhite.jpg");
   background-position: center;
   background-origin: inherit;
+  background-repeat: no-repeat;
   text-align: center;
-  padding: 20%;
+  padding: 10%;
   color: white;
 }
 .suninfo, .showcase{
