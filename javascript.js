@@ -52,9 +52,21 @@ function ShowDiv(div) {
 }
 
 // Give user the idea of responding to a post, only for demonstration purposes
-const displayError = function () {
+const displayErrorMessages = function () {
   alert('As of now, you cannot send messages, but the developers are working on it!')
 }
 
+const displayErrorLogin = function () {
+  if (hasLoggedIn === false){
+    alert("You need to login to reply to this thread")
+  }
+  else {
+    alert("Something went wrong, please try again later!")
+  }
+}
+
+const noMessages = function () {
+  alert('There are no actual reactions, it is just a mockup')  
+}
 
 

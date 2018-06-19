@@ -147,7 +147,6 @@ h2, h3 {
   object-fit: cover
 }
 
-
 .leftcolumn {
     float: left;
     width: 75%;
@@ -191,4 +190,13 @@ h2, h3 {
         width: 100%;
         padding: 0;
     }
+}
+
+.communityButton {
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    align-content: center;
 }
