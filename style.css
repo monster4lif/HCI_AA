@@ -14,16 +14,7 @@ h2, h3 {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-#sloganAndLogo, p{
-    text-align: center;
-    /* color: #363F45; */
-    color: black;
-    font-family: Arial, Helvetica, sans-serif;
-    /* font-size: 3em; */
-}
-
 /*Hides the loading gif after side is done loading*/
-
 #loader {
     position: fixed;
     top: 0;
@@ -67,6 +58,9 @@ h2, h3 {
   .menu input[type=text] {
     border: 1px solid #ccc;
   }
+  .showcase, .showcaseStore{
+      background-image: none;  
+    }
 }
 
 
@@ -84,6 +78,7 @@ h2, h3 {
 .menu a:hover {
     background-color: #ddd;
     color: black;
+    cursor: pointer;
 }
 .logobutton a:hover{
     background-color: black;

@@ -24,12 +24,16 @@ function displayLogin() {
 // Open a webpage after clicking the hyperlink, and immediately scrolling to the top of the page
 
 function ShowDiv(div) {
-  let container = document.getElementById('menu');
+  var container = document.getElementById('menu');
   var links = container.getElementsByClassName('button');
+  // console.log(container)
+  // console.log(links)
   
   // Have the currently shown page change colour in the navigation bar
   for (let i = 0; i<links.length; i++) {
+    console.log('test')
     links[i].addEventListener('click', function () {
+      console.log('test 2')
       let activeButton = document.getElementsByClassName('active');
       console.log(activeButton);
       this.className += ' active';
