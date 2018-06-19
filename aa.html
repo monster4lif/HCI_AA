@@ -16,7 +16,7 @@
         	<img src="images/loading-gif.gif" style="width:80%;" alt="loading gif">
      	</div> -->
 		<div class="menu" id="menu">
-			<p onclick="ShowDiv('homepage')" style="cursor: pointer;" class="logobutton"><img src="images/logo.jpg" style="width: 6%; float: left; margin-right: 1% "></p>
+			<p onclick="ShowDiv('homepage')" style="cursor: pointer;" class="button"><img src="images/logo.jpg" style="width: 6%; float: left; margin-right: 1%" alt="The A&A logo"></p>
 			<a class = "button active" onclick="ShowDiv('homepage')">Home</a>
 			<a class = "button" onclick="ShowDiv('store')">Store</a>
 			<a class = "button" onclick="ShowDiv('community')">Community</a>
@@ -116,46 +116,48 @@
 			<div class="card">
 				<h2>Adam & Aoki improved their designs for the t-shirts!</h2>
 				<h5>by: @shelly123 on: 6-7-2018</h5>
-				<img src="images/community/new_tshirts.jpg" style="height: 200px;" class="userimg">
+				<img src="images/community/new_tshirts.jpg" style="height: 200px;" class="userimg" alt="A collection of the new t-shirts of A&A">
 				<p>Last friday, the founders of Adam & Aoki showed their new and improved design and we're absolutely loving it!
-					<br> <strong>3 reactions <br> <i onclick="displayError()" style="cursor: pointer;">React</i> </strong></p>
+					<br> <strong>3 reactions <br> <button onclick="noMessages()" class="communityButton">Read reactions</button>
+						<button onclick="displayErrorLogin()" class="communityButton">React</button> </strong></p>
 			</div>
 			<div class="card">
 				<h2>My baby is reacting very badly on the new sunscreen! Please look!</h2>
 				<h5>by: @friendlyNeighbour on: 13-6-2018</h5>
-				<img src= "images/community/dangerous_sunscreen.jpg" class="userimg" style="height: 200px;">
+				<img src= "images/community/dangerous_sunscreen.jpg" class="userimg" style="height: 200px;" alt="A picture of 'dangerous' sunscreen">
 				<p>This sunscreen caused my daughter (3yo) to experience extreme rashes and other pains. Has anybody else experienced this? I am going to take her to the doktor now, but I wanted to warn all of you to 
 					<i>not</i> use this sunscreen! 
-					<br> <strong>3 reactions <br> <i onclick="displayError()" style="cursor: pointer;">React</i> </strong> </p>
+					<br> <strong>3 reactions <br> <button onclick="noMessages()" class="communityButton">Read reactions</button>
+						<button onclick="displayErrorLogin()" class="communityButton">React</button> </strong> </p>
 			</div>
 			<div class="card">
 				<h2>Please don't look at this!</h2>
 				<h5>by: @shelly123 on: 6-7-2018</h5>
-				<img src="images/community/last_post.jpg" style="height: 200px;" class="userimg">
+				<img src="images/community/last_post.jpg" style="height: 200px;" class="userimg" alt="A filler image">
 				<p>Honestly, this last post is a mere filler up. There's only so much you can tell about Adam&Aoki without becoming repetative. We recently started 
 					Kickstarter, but by the time a website is lanched, I guess Kickstarter is off the table. 
-					<br> <strong>300.000 reactions <br> <i onclick="displayError()" style="cursor: pointer;">React</i></strong></p>
+					<br> <strong>300.000 reactions <br> <button onclick="noMessages()"class="communityButton">Read reactions</button>
+					<button onclick="displayErrorLogin()" class="communityButton">React</button></strong></p>
 			</div>
 		</div>
 		<div class="rightcollumn">
 			<div class="card">
 				<h2>Bio</h2>
 				<h4>@BulgarianMom</h4>
-				<u style="cursor: pointer;" onclick="displayError()">Look at my messages (0)</u>
-				<img src="images/community/bulgaria_flag.jpg" class="userimg" style="height: 100px;">
+				<u style="cursor: pointer;" onclick="displayErrorMessages()">Look at my messages (0)</u>
+				<img src="images/community/bulgaria_flag.jpg" class="userimg" style="height: 100px;" alt="The flag of Bulgaria, the profile of the user">
 				<p>Proud mom of 2 lovely little girls, here to talk to other parents to protect our lovely children from the sun.</p>
 			</div>
 			<div class="card">
 				<h3>Popular post</h3>
-				<img src = "images/community/hat.jpg" class="userimg" style="height: 100px"><br>
-				<img src = "images/community/sunprotection.jpg" class="userimg" style="height: 100px"><br>
-				<img src = "images/community/sun_tshirt.jpg" class="userimg" style="height: 100px;">
+				<img src = "images/community/hat.jpg" class="userimg" style="height: 100px" alt="An image from a popular post"><br>
+				<img src = "images/community/sunprotection.jpg" class="userimg" style="height: 100px" alt="An image from a popular post"><br>
+				<img src = "images/community/sun_tshirt.jpg" class="userimg" style="height: 100px;" alt="An image from a popular post">
 			</div>
 		</div>
 	</div>
 	<div class="footerCommunity">
 		<h2 onclick="ShowDiv('community')">Go to the top of the page</h2>
-	</div>
 	</div>
 </div>
 
