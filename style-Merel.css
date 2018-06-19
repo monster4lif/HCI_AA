@@ -197,3 +197,16 @@ h2, h3 {
 p{
   text-align: left;
 }
+ 
+.productAnnouncements ,.newScience{
+  background-color: #e6dfd9;
+}
+
+.productAnnouncements h2, .newsletter h2, .companyUpdates h2,.newScience h2{
+  font-weight: : bold;
+  background-color: black;
+  color: white;
+  padding-top:10px;
+  padding-left: 5px;
+  padding-bottom: 10px;
+}
