@@ -87,8 +87,8 @@ h2, h3 {
 }
 
 /* Add a color to the active/current link */
-.active{
-    background-color: #666;
+.menu a.active {
+    background-color: rgb(48, 5, 83);
     color: white;
 }
 
@@ -123,26 +123,77 @@ h2, h3 {
   padding: 10%;
 }
 
-/* .intro{
-    
-} */
+.intro{
+}
 .showcase{
-  background-image: url("images/rechtop.png");
+  background-image: url("t_shirt_design_marin.jpg");
   background-position: center;
   background-origin: inherit;
   text-align: center;
   padding: 20%;
   color: white;
 }
-.showcaseStore{
-  background-image: url("images/shopify_no_white.jpg");
-  background-position: center;
-  background-origin: inherit;
-  background-repeat: no-repeat;
-  text-align: center;
-  padding: 10%;
-  color: white;
-}
+
 .suninfo, .showcase{
   background-color: grey;
+}
+
+/* Community styling */
+.forum{
+  margin-left: 10%;
+  background-color: lightgrey;
+}
+.forum-header{
+  background-color: grey;
+  font-weight: bold;
+}
+
+.sidenav {
+    position: fixed;
+    z-index: 1;
+    background: #eee;
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #2196F3;
+    display: block;
+}
+
+/* News styling */
+.sidebar{
+  height: 100%;
+  width: 15%;
+  position: sticky;
+  z-index: 1;
+  left: 0;
+  top:48px;
+  display: block;
+  background-color: #000;
+  overflow-x: hidden;
+  }
+
+.sidebar a {
+    float: left;
+    color: #f2f2f2;
+    text-align: left;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.sidebar a:hover {
+    background-color: #ddd;
+    color: black;
+    width: 100%;
+    text-align: left;
+}
+
+.main {
+  margin-left:15%; /* Same as the width of the sidenav */
+}
+p{
+  text-align: left;
 }
