@@ -41,6 +41,3 @@ function ShowDiv(div) {
   window.scrollTo(0,0);
   document.getElementsByClassName(div)[0].style.display = "inherit";
 }
-
-
-
