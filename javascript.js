@@ -2,6 +2,7 @@ console.log('Hello World!')
 
 // Variable to be able to load the correct div with the html code
 const pages = ['homepage', 'store', 'community', 'about', 'news']
+let hasLoggedIn = false;
 
 // Play the loading gif and then show the 'homepage' div
 $(window).load(function () {
@@ -16,9 +17,10 @@ $(window).load(function () {
 
 // Ask for a Username and Password when pressing the login button
 function displayLogin() {
-    person = prompt('Login \n\nTo interact with the Community and get Personal Support:\n\n Username:');
+    person = prompt('Login \n\nTo interact with the Community and get Personal Support:\n\n Username:', 'Adam');
     password = prompt('Password:', "*****");
     alert(`Welcome, ${person}`);
+    hasLoggedIn = true;
 }
 
 // Open a webpage after clicking the hyperlink, and immediately scrolling to the top of the page
@@ -47,6 +49,11 @@ function ShowDiv(div) {
   };
   window.scrollTo(0,0);  // Scroll to the top of the page
   document.getElementsByClassName(div)[0].style.display = "inherit";
+}
+
+// Give user the idea of responding to a post, only for demonstration purposes
+const displayError = function () {
+  alert('As of now, you cannot send messages, but the developers are working on it!')
 }
 
 
