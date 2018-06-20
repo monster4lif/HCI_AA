@@ -5,27 +5,20 @@ body {
 
 @keyframes bgcolor {
     0% {
-        background-color: #ff0000
+        background-color: black
     }
-
-    30% {
-        background-color: #c9bf00
+    25% {
+        background-color: grey
     }
-
-    60% {
-        background-color: #0cba00
+    50% {
+        background-color: orange
     }
-
-    90% {
-        background-color: #008bba
-    }
-
     100% {
-        background-color: #5d00ba
+        background-color: red
     }
 }
 
-#sloganAndLogo, h1 {
+h1 {
     text-align: center;
     /* color: #363F45; */
     font-family: Arial, Helvetica, sans-serif;
@@ -56,6 +49,7 @@ h2, h3 {
     overflow: hidden;
     width: 100%;
     position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
 
 }
 
@@ -118,13 +112,13 @@ h2, h3 {
 }
 
 /* HomePage styling */
-.intro, .information, .suninfo {
+.intro, .information, .suninfo, .introStore {
   text-align: center;
   padding: 10%;
 }
 
 .intro{
-    background-image: url("images/kidsplaying_1435393126.jpg");
+    background-image: url("images/home/homecover1.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -132,12 +126,24 @@ h2, h3 {
     font-size: 200%;
 }
 
-.intro h2{
+<<<<<<< HEAD
+.introStore{
+    background-image: url("images/market.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: grey;
+    font-size: 200%;
+}
+
+.intro h2, .introStore h2{
   color: white;
   -webkit-text-stroke: 2px black;
   text-stroke: 2px black;
 }
 
+=======
+>>>>>>> bf1a9b50f1cb44a3f0f144aaf5cd6aa04a4d16ae
 .showcase{
   background-color: Black;
   overflow: hidden;
@@ -152,7 +158,6 @@ h2, h3 {
 }
 
 .showcaseImg img{
-  vertical-align: middle;
   width: 100%;
   padding:15%;
   overflow: auto;
@@ -167,6 +172,15 @@ h2, h3 {
 }
 
 .showcaseStore{
+  background-image: url("images/t_shirt_design_marin.png");
+  background-position: center;
+  background-origin: inherit;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding: 10%;
+  color: white;
+}
+.storeShopify{
   background-image: url("images/shopify_no_white.jpg");
   background-position: center;
   background-origin: inherit;
@@ -176,11 +190,39 @@ h2, h3 {
   color: white;
 }
 
+.informationStore{
+    text-align: center;
+}
 .information{
-  background-image: url("images/500579999.jpg");
+  font-size: 24px;
+  background-image: url("images/home/homecover4.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 10%;
+  background-position: center;
+}
+
+.informationText {
+  padding: 5%;
+  background-color: rgba(255, 255, 255, 0.60);
+}
+
+.suninfo{
+  width: 90%;
+  overflow: hidden;
+  padding: 5%;
+}
+
+.sunimg{
+  float:left;
+  width: 40%;
+  padding: 5%;
+}
+
+.suntext{
+  float: right;
+  width: 40%;
+  padding: 5%;
+  font-size: 24px;
 }
 
 .suninfo, .showcase{
@@ -200,7 +242,7 @@ h2, h3 {
     border: 1px solid #ccc;
   }
   .showcase{
-    overflow: auto;
+    overflow: hidden;
     text-align: center;
     color: white;
     width: auto;
@@ -217,11 +259,29 @@ h2, h3 {
   .showcaseText{
     width: 200%;
     height: auto;
-    padding: 5%
+    padding: 5%;
   }
 
-  h2{
-    font-size: medium;
+  .suninfo{
+    width: 100%;
+    padding: 0%;
+  }
+
+  .sunimg{
+    overflow: scroll;
+    width: 90%;
+    padding: 5%;
+    float: none;
+  }
+
+  .suntext{
+    float: none;
+    width: 90%;
+
+  }
+
+  h2, h3{
+    font-size: large;
   }
 
   /* When the screen is small, hide all links in menu execpt home/logo, 
@@ -234,11 +294,11 @@ h2, h3 {
       align-items: center;
   } 
 
-    .icon a:hover {
+    .icon a:hover, .button a:hover {
         background-color: black;
         
     }
-
+    
   .menu.responsive a.button:nth-child(2){text-align: center;}
 
   .search-container, .logo {display: none;}
