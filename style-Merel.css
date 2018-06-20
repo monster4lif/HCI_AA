@@ -240,12 +240,6 @@ p{
   text-align: center;
 }
 
-.contact h2{
-  font-weight: : bold;
-  background-color: black;
-  color: white;
-}
-
 /* Make the community responsive */
 @media screen and (max-width: 800px) {
     .leftcolumnabout, .rightcolumnabout {
@@ -256,6 +250,14 @@ p{
 
 .leftcolumnabout {
     padding-right: 15px;
+}
+.contact h2, .mision h2, .vision h2, .aboutus h2, .science h2, .makes h2, .documentary h2, .founderStory h2{
+  font-weight: : bold;
+  background-color: black;
+  color: white;
+  padding-top:10px;
+  padding-left: 10px;
+  padding-bottom: 10px;
 }
 
 .rightcolumnabout {
