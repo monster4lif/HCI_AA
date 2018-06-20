@@ -1,25 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>Adam & Aoki</title>
+    <title>Adam &amp; Aoki</title>
     <link rel="stylesheet" type="text/css" href="style-Merel.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
     <script src="javascript.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
 </head>
 	<body>
-		<div class="menu">
-			<a href="HomePage.html">Home</a>
-			<a href="Store.html">Store</a>
-			<a href="Community.html">Community</a>
-			<a href="News.html">News</a>
-			<a href="About.html">About</a>
+<div class="menu" id="menu">
+			<p onclick="ShowDiv('homepage')" style="cursor: pointer;" class="logobutton"><img src="images/logo.jpg" style="width: 6%; float: left; margin-right: 1% "></p>
+			<a class = "button active" onclick="ShowDiv('homepage')">Home</a>
+			<a class = "button" onclick="ShowDiv('store')">Store</a>
+			<a class = "button" onclick="ShowDiv('community')">Community</a>
+			<a class = "button" onclick="ShowDiv('news')">News</a>
+			<a class = "button" onclick="ShowDiv('about')">About</a>
 			<div class="search-container">
-					<button type="submit"onclick="displayLogin()">
-							<i class="material-icons" style="float: left;" >account_circle </i>
+					<button type="submit" onclick="displayLogin()">
+							<i class="material-icons" style="float: left;">account_circle </i>
 					</button>
 					<button type="submit">
 							<i class="material-icons" style="float: left;">search</i>
@@ -27,6 +29,7 @@
 					<input type="text" placeholder="Search.." name="search">
 			</div>
 		</div>
+		<div class="newspage">
 		<div class="intro">
 			<h1>News</h1>
 			<h2>Highlights</h2>
