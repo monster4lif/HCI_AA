@@ -94,6 +94,11 @@ h2, h3 {
     color: white;
 }
 
+/* Hide the hambuger menu on big screens */
+.menu .icon {
+    display: none;
+}
+
 /* Stylesheet for the search container*/
 .search-container button {
   float: right;
@@ -218,6 +223,41 @@ h2, h3 {
   h2{
     font-size: medium;
   }
+
+  /* When the screen is small, hide all links in menu execpt home/logo, 
+  and show the hamburger icon */
+  .menu.responsive a.button:not(:nth-child(2)){display:none;}
+  .menu a.icon {
+      float: left;
+      display: block;
+      position: relative;
+      align-items: center;
+  } 
+
+    .icon a:hover {
+        background-color: black;
+        
+    }
+
+  .menu.responsive a.button:nth-child(2){text-align: center;}
+
+  .search-container, .logo {display: none;}
+
+  /* When javascript add a 'responsive' class to the menu, show the links when clicking the icon */
+  .menu.responsive {position: c; background-color: white}
+
+  .menu.responsive a.icon {
+      position: absolute;
+      /* right: 10; */
+      top: 0;
+      float: left;
+  }
+
+  .menu.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+  }
 }
 /* Community styling */
 .headercommunity{
@@ -240,6 +280,8 @@ h2, h3 {
     float: left;
     width: 25%;
     padding-left: 20px;
+    border-left-style: solid;
+    border-left-color: black;
 }
 
 .userimg {
@@ -253,6 +295,17 @@ h2, h3 {
     background-color: white;
     padding:20px;
     margin-top:20px;
+}
+
+.post {
+    background-color: white;
+    padding:20px;
+    margin-top:20px;
+    border-style: solid;
+    border-width: 2px;
+    border-left: none;
+    border-bottom: none;
+    border-right: none;
 }
 
 .row:after {
@@ -283,4 +336,19 @@ h2, h3 {
     background-color: black;
     color: white;
     align-content: center;
+}
+
+#topButton {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: black; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */    
 }

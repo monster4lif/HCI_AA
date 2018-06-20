@@ -26,23 +26,22 @@ function displayLogin() {
 // Open a webpage after clicking the hyperlink, and immediately scrolling to the top of the page
 
 function ShowDiv(div) {
-  var container = document.getElementById('menu');
-  var links = container.getElementsByClassName('button');
+  var menu = document.getElementById('menu');
+  var links = menu.getElementsByClassName('button');
   // console.log(container)
   // console.log(links)
 
   // Have the currently shown page change colour in the navigation bar
   for (let i = 0; i<links.length; i++) {
-    console.log('test')
     links[i].addEventListener('click', function () {
-      console.log('test 2')
-      let activeButton = document.getElementsByClassName('active');
-      console.log(activeButton);
-      this.className += ' active';
-      activeButton[0].className = activeButton[0].className.replace('active', '');
+          let activeButton = document.getElementsByClassName('active');
+          this.className += ' active';
+          activeButton[0].className = activeButton[0].className.replace(' active', ''); 
 
-    });
-  }
+        })
+        // console.log(links[i])
+    };
+  
   // console.log(i);
   for (let i = 0; i < pages.length; i++){
     document.getElementsByClassName(pages[i])[0].style.display = 'none';
@@ -66,5 +65,34 @@ const displayErrorLogin = function () {
 }
 
 const noMessages = function () {
-  alert('There are no actual reactions, it is just a mockup')
+  alert('There are no actual reactions, it is just a prototype')
 }
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function () { scrollFunction() };
+
+const scrollFunction = function () {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("topButton").style.display = "block";
+  } else {
+    document.getElementById("topButton").style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+const goToTopPage = function () {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+// Make the page responsive: hide the links in the navigation bar, exept for the 'hamburger' icon
+const makePageResponsive = function () {
+  let menu = document.getElementById('menu'); // Find the menu 
+  if (menu.className === 'menu') {
+    menu.className = 'menu responsive';
+  } else {
+    menu.className = 'menu';
+  }
+}
+
+// console.log(makePageResponsive())
