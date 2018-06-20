@@ -118,7 +118,7 @@ h2, h3 {
 }
 
 /* HomePage styling */
-.intro, .information, .suninfo {
+.intro, .information, .suninfo, .introStore {
   text-align: center;
   padding: 10%;
 }
@@ -132,7 +132,16 @@ h2, h3 {
     font-size: 200%;
 }
 
-.intro h2{
+.introStore{
+    background-image: url("images/market.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: grey;
+    font-size: 200%;
+}
+
+.intro h2, .introStore h2{
   color: white;
   -webkit-text-stroke: 2px black;
   text-stroke: 2px black;
@@ -167,6 +176,15 @@ h2, h3 {
 }
 
 .showcaseStore{
+  background-image: url("images/t_shirt_design_marin.png");
+  background-position: center;
+  background-origin: inherit;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding: 10%;
+  color: white;
+}
+.storeShopify{
   background-image: url("images/shopify_no_white.jpg");
   background-position: center;
   background-origin: inherit;
@@ -176,6 +194,9 @@ h2, h3 {
   color: white;
 }
 
+.informationStore{
+    text-align: center;
+}
 .information{
   background-image: url("images/500579999.jpg");
   background-repeat: no-repeat;
@@ -234,11 +255,11 @@ h2, h3 {
       align-items: center;
   } 
 
-    .icon a:hover {
+    .icon a:hover, .button a:hover {
         background-color: black;
         
     }
-
+    
   .menu.responsive a.button:nth-child(2){text-align: center;}
 
   .search-container, .logo {display: none;}
