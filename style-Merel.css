@@ -159,22 +159,20 @@ h2, h3 {
   text-stroke: 2px black;
 }
 .leftcolumnnews {
+    height: 100%;
     float: left;
-    width: 15%;
+    width: 17%;
     background-color: black;
 }
-
-.sidebar{
-  width: 100%;
-  z-index: 1;
-  left: 0;
-  top:48px;
-  background-color: #000;
+.sidebar {
+  font-family: Arial, Helvetica, sans-serif;
+  z-index: 100;
+  background-color: #4e4c4c;
   overflow-x: hidden;
-  column-fill: auto;
-  }
+}
 
 .sidebar a {
+    width: 100%;
     float: left;
     color: #f2f2f2;
     text-align: left;
@@ -191,9 +189,10 @@ h2, h3 {
 }
 
 .main {
-  margin-left:15%; /* Same as the width of the sidenav */
+  margin-left:17%; /* Same as the width of the sidenav */
 }
 p{
+  padding-left: 10px;
   text-align: left;
 }
  
@@ -201,7 +200,7 @@ p{
   background-color: #e6dfd9;
 }
 
-.productAnnouncements h2, .newsletter h2, .companyUpdates h2,.newScience h2{
+.sidebar h2, .productAnnouncements h2, .newsletter h2, .companyUpdates h2,.newScience h2{
   font-weight: : bold;
   background-color: black;
   color: white;
@@ -221,7 +220,7 @@ p{
     height: auto;
   }
 
-/*Aboutstyling*/
+/*About styling*/
 .introabout{
   text-align: center;
   padding: 10%;
@@ -249,8 +248,7 @@ p{
   color: white;
   text-align: center;
 }
-
-/* Make the community responsive */
+/* Make the about responsive */
 @media screen and (max-width: 800px) {
     .leftcolumnabout, .rightcolumnabout {
         width: 100%;
@@ -275,12 +273,15 @@ p{
   padding-right: 10px;
 }
 
+ul{
+  list-style: circle;
+  font-family: Arial, Helvetica, sans-serif;
+}
 .mision, .science, .documentary {
   background-color: #e6dfd9;
 }
 
 .rightcolumnabout {
-  position: sticky;
   float: right;
   width: 25%;
   display: block;
@@ -301,22 +302,3 @@ padding-top: 0;
 padding-left: 0; 
 padding-right: 0; 
 }
-
-.hs-responsive-embed iframe, 
-.hs-responsive-embed object, 
-.hs-responsive-embed embed { 
-position: absolute; 
-top: 0; 
-left: 0; 
-width: 100%; 
-height: 100%; 
-border: 0; 
-}
-
-.hs-responsive-embed, 
-.hs-responsive-embed.hs-responsive-embed-youtube, 
-.hs-responsive-embed.hs-responsive-embed-wistia, 
-.hs-responsive-embed.hs-responsive-embed-vimeo { 
-padding-bottom: 56.25%; 
-}
-
