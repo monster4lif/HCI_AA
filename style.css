@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: Arial, Helvetica, sans-serif
 }
 
 @keyframes bgcolor {
@@ -43,7 +44,6 @@ h2, h3 {
     object-fit: cover;
 }
 /* Add a black background color to the top navigation */
-
 .menu {
     background-color: Black;
     overflow: hidden;
@@ -52,7 +52,7 @@ h2, h3 {
     font-family: Arial, Helvetica, sans-serif;
 
 }
-
+/* Style the search bar */
 .menu input[type=text] {
   float: right;
   padding: 6px;
@@ -77,9 +77,6 @@ h2, h3 {
     background-color: #ddd;
     color: black;
     cursor: pointer;
-}
-.logobutton a:hover{
-    background-color: black;
 }
 
 /* Add a color to the active/current link */
@@ -112,7 +109,7 @@ h2, h3 {
 }
 
 /* HomePage styling */
-.intro, .information, .suninfo, .introStore {
+.intro, .information, .suninfo, .introStore, .introcommunity {
   text-align: center;
   padding: 10%;
 }
@@ -127,7 +124,7 @@ h2, h3 {
 }
 
 .introStore{
-    background-image: url("images/market.jpg");
+    background-image: url("images/shop.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -135,10 +132,10 @@ h2, h3 {
     font-size: 200%;
 }
 
-.intro h2, .introStore h2{
+.intro h2, .introStore h2, .introcommunity h2{
   color: white;
   -webkit-text-stroke: 2px black;
-  text-stroke: 2px black;
+  /* text-stroke: 2px black; */
 }
 
 .showcase{
@@ -296,12 +293,16 @@ h2, h3 {
         
     }
     
-  .menu.responsive a.button:nth-child(2){text-align: center;}
+  .menu.responsive a.button:nth-child(2){
+      text-align: center;
+    }
 
-  .search-container, .logo {display: none;}
+  .search-container, .logo {
+      display: none;
+    }
 
   /* When javascript add a 'responsive' class to the menu, show the links when clicking the icon */
-  .menu.responsive {position: c; background-color: white}
+  .menu.responsive {background-color: white}
 
   .menu.responsive a.icon {
       position: absolute;
@@ -317,15 +318,13 @@ h2, h3 {
   }
 }
 /* Community styling */
-.headercommunity{
-  /* background-image: url("images/community/banner.jpg"); */
-  background-position: center;
-  background-origin: inherit;
-  background-repeat: no-repeat;
-  text-align: center;
-  padding: 10%;
-  color: black;
-  object-fit: cover
+.introcommunity{
+      background-image: url("images/community_banner.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: white;
+    font-size: 200%;
 }
 
 .leftcolumn {
@@ -408,4 +407,105 @@ h2, h3 {
     padding: 15px; /* Some padding */
     border-radius: 10px; /* Rounded corners */
     font-size: 18px; /* Increase font size */    
+}
+/* News styling */
+.intronews{
+  text-align: center;
+  padding: 10%;
+}
+
+.intronews{
+    background-image: url("images/news.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: grey;
+    font-size: 200%;
+}
+
+.intronews h2{
+  color: white;
+  -webkit-text-stroke: 2px black;
+  text-stroke: 2px black;
+}
+.leftcolumnnews {
+    float: left;
+    width: 15%;
+    background-color: black;
+}
+
+.sidebar{
+  width: 100%;
+  z-index: 1;
+  left: 0;
+  top:48px;
+  background-color: #000;
+  overflow-x: hidden;
+  column-fill: auto;
+  }
+
+.sidebar a {
+    float: left;
+    color: #f2f2f2;
+    text-align: left;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.sidebar a:hover {
+    background-color: #ddd;
+    color: black;
+    width: 100%;
+    text-align: left;
+}
+
+.main {
+  margin-left:15%; /* Same as the width of the sidenav */
+}
+p{
+  text-align: left;
+}
+ 
+.productAnnouncements ,.newScience{
+  background-color: #e6dfd9;
+}
+
+.productAnnouncements h2, .newsletter h2, .companyUpdates h2,.newScience h2{
+  font-weight: : bold;
+  background-color: black;
+  color: white;
+  padding-top:10px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+.responsive {
+    width: 100%;
+    height: auto;
+}
+
+/*Aboutstyling*/
+.introabout{
+  text-align: center;
+  padding: 10%;
+}
+
+.introabout{
+    background-image: url("images/amsterdam.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: grey;
+    font-size: 200%;
+}
+
+.introabout h2{
+  color: white;
+  -webkit-text-stroke: 2px black;
+  text-stroke: 2px black;
+}
+.contact p {
+  background-color: #1a1a1a;
+  color: white;
+  text-align: center;
 }
