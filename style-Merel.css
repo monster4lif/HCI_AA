@@ -209,10 +209,17 @@ p{
   padding-left: 10px;
   padding-bottom: 10px;
 }
-.responsive {
+@media screen and (max-width: 800px) {
+  .responsive {
     width: 100%;
     height: auto;
+  }
 }
+
+.responsive {
+    width: 800px;
+    height: auto;
+  }
 
 /*Aboutstyling*/
 .introabout{
@@ -234,8 +241,11 @@ p{
   -webkit-text-stroke: 2px black;
   text-stroke: 2px black;
 }
-.contact p {
+.contact{
   background-color: #1a1a1a;
+  padding-bottom: 10px;
+}
+.contact p {
   color: white;
   text-align: center;
 }
@@ -260,11 +270,20 @@ p{
   padding-bottom: 10px;
 }
 
+.contact p, .mision p, .vision p, .aboutus p, .science p, .makes p, .documentary p, .founderStory p{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.mision, .science, .documentary {
+  background-color: #e6dfd9;
+}
+
 .rightcolumnabout {
+  position: sticky;
   float: right;
   width: 25%;
   display: block;
-  background-color: #000;
   overflow-x: hidden;
   }
 
