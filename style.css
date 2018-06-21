@@ -126,7 +126,6 @@ h2, h3 {
     font-size: 200%;
 }
 
-<<<<<<< HEAD
 .introStore{
     background-image: url("images/market.jpg");
     background-position: center;
@@ -142,8 +141,6 @@ h2, h3 {
   text-stroke: 2px black;
 }
 
-=======
->>>>>>> bf1a9b50f1cb44a3f0f144aaf5cd6aa04a4d16ae
 .showcase{
   background-color: Black;
   overflow: hidden;
