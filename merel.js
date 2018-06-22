@@ -2,8 +2,10 @@
  *
  */
 
-var numcontact = 620; //number of pixels before modifying styles
-var numnav= 560;
+
+
+/* Making the sidenav on news fixed after the banner */
+var numnav= 560; //number of pixels before modifying styles
 
 $(window).bind('scroll', function () {
     if ($(window).scrollTop() > numnav) {
@@ -12,6 +14,10 @@ $(window).bind('scroll', function () {
         $('.leftcolumnnews').removeClass('fixedsidebar');
     }
 });
+//Inspired by http://jsfiddle.net/j6odpxsk/
+
+/* Making Contact on About fixed after the banner */
+var numcontact = 600; //number of pixels before modifying styles
 
 $(window).bind('scroll', function () {
     if ($(window).scrollTop() > numcontact) {
@@ -21,7 +27,4 @@ $(window).bind('scroll', function () {
     }
 });
 
-
-//USE SCROLL WHEEL FOR THIS FIDDLE DEMO
-
-// http://jsfiddle.net/j6odpxsk/
+//Inspired by http://jsfiddle.net/j6odpxsk/

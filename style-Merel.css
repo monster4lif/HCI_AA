@@ -306,6 +306,7 @@ p{
   padding-top:10px;
   padding-left: 10px;
   padding-bottom: 10px;
+  margin: 0;
 }
 
 .contact p, .mision p, .vision p, .aboutus p, .science p, .makes p, .documentary p, .founderStory p{
@@ -326,6 +327,7 @@ ul{
   width: 25%;
   display: block;
   overflow-x: hidden;
+  margin: 0;
   }
 
 .row:after {
