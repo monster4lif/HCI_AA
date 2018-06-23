@@ -41,7 +41,7 @@ function ShowDiv(div) {
         // console.log(links[i])
     };
   
-  console.log(i);
+  //console.log(i);
   for (let i = 0; i < pages.length; i++){
     document.getElementsByClassName(pages[i])[0].style.display = 'none';
   };
