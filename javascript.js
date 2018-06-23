@@ -36,13 +36,12 @@ function ShowDiv(div) {
     links[i].addEventListener('click', function () {
           let activeButton = document.getElementsByClassName('active');
           this.className += ' active';
-          activeButton[0].className = activeButton[0].className.replace(' active', ''); 
-
+          activeButton[0].className = activeButton[0].className.replace(' active', '');
         })
         // console.log(links[i])
     };
   
-  // console.log(i);
+  console.log(i);
   for (let i = 0; i < pages.length; i++){
     document.getElementsByClassName(pages[i])[0].style.display = 'none';
   };

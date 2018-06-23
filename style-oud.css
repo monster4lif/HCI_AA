@@ -175,7 +175,7 @@ h2, h3 {
   color: white;
 }
 .storeShopify{
-  background-image: url("images/shopify_no_white.jpg");
+  background-image: url("images/shopify_no_white.jpg"
   background-position: center;
   background-origin: inherit;
   background-repeat: no-repeat;
@@ -349,28 +349,13 @@ h2, h3 {
 .card {
     background-color: white;
     padding:20px;
-    border-top: 2px solid black;
-}
-
-.card1 {
-    background-color: #e6dfd9;
-    padding:20px;
-    border-top: 2px solid black;
+    margin-top:20px;
 }
 
 .post {
     background-color: white;
     padding:20px;
-    border-style: solid;
-    border-width: 2px;
-    border-left: none;
-    border-bottom: none;
-    border-right: none;
-}
-
-.post2 {
-    background-color: #e6dfd9;
-    padding:20px;
+    margin-top:20px;
     border-style: solid;
     border-width: 2px;
     border-left: none;
@@ -449,6 +434,13 @@ h2, h3 {
   height: 100%;
   width: 17%;
 }
+.fixedcontact {
+    position:fixed;
+    top:57px;
+    right:0;
+    float: right;
+    width: 100%;
+  }
 
 .sidebar nav {
   font-family: Arial, Helvetica, sans-serif;
@@ -493,8 +485,8 @@ p{
 }
  
 .productAnnouncements ,.newScience{
-    background-color: #e6dfd9;
-
+  background-color: #e6dfd9;
+  padding-bottom: 10px;
 }
 .sidebar h2{
   margin: 0;
@@ -507,9 +499,13 @@ p{
 
 }
 
-.productAnnouncements, .newsletter, .companyUpdates,.newScience{
-  border-top: 2px solid black;
-  padding:20px;
+.productAnnouncements h2, .newsletter h2, .companyUpdates h2,.newScience h2{
+  font-weight: : bold;
+  background-color: black;
+  color: white;
+  padding-top:10px;
+  padding-left: 10px;
+  padding-bottom: 10px;
 }
 
   .responsivescience {
@@ -547,22 +543,15 @@ p{
 }
 
 .contact{
-  padding: 20px;
-  border-top: 2px solid black;
-  margin-top: 0;
+  border-left: 3px solid black;
+  background-color: #1a1a1a;
+  padding-bottom: 10px;
 }
 .contact p {
+  margin-top: 0;
+  color: white;
   text-align: center;
 }
-
-.fixedcontact {
-    position:fixed;
-    top:57px;
-    right:0;
-    float: right;
-    width: 100%;
-  }
-
 /* Make the about responsive */
 @media screen and (max-width: 800px) {
     .leftcolumnabout{
@@ -575,12 +564,20 @@ p{
     width:75%;
     border-right: 3px solid black;
 }
-
-.mision, .vision, .aboutus , .science, .makes, .documentary, .founderStory{
-  border-top: 2px solid black;
-  padding:20px;
+.contact h2, .mision h2, .vision h2, .aboutus h2, .science h2, .makes h2, .documentary h2, .founderStory h2{
+  font-weight: : bold;
+  background-color: black;
+  color: white;
+  padding-top:10px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  margin: 0;
 }
 
+.contact p, .mision p, .vision p, .aboutus p, .science p, .makes p, .documentary p, .founderStory p{
+  padding-left: 10px;
+  padding-right: 10px;
+}
 
 ul{
   list-style: circle;
@@ -605,10 +602,3 @@ ul{
   overflow-x: hidden;
   margin: 0;
   }
-
-  .footerabout {
-    padding: 20px;
-    text-align: center;
-    background: #ddd;
-    margin-top: 20px;
-}
