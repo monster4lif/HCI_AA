@@ -45,6 +45,7 @@ h2, h3 {
 }
 /* Add a black background color to the top navigation */
 .menu {
+    z-index: 10;
     background-color: Black;
     overflow: hidden;
     width: 100%;
@@ -632,3 +633,18 @@ ul{
     margin-top: 20px;
 }
 
+.video-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+    z-index: 1;
+}
+.video-responsive iframe{
+    z-index: 1;
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
