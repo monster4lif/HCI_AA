@@ -435,7 +435,8 @@ h2, h3 {
     font-size: 200%;
 }
 
-.leftcolumnnews {
+@media screen and (min-width: 800px) {
+  .leftcolumnnews {
     float: left;
     width: 17%;
     background-color: black;
@@ -445,6 +446,9 @@ h2, h3 {
   height: 100%;
   width: 17%;
 }
+}
+
+@media screen and (min-width: 800px) {
 .fixedcontact {
     position:fixed;
     top:57px;
@@ -452,12 +456,13 @@ h2, h3 {
     float: right;
     width: 100%;
   }
+}
 
 .sidebar nav {
   font-family: Arial, Helvetica, sans-serif;
   z-index: 1;
   top:0;
-  background-color: black;
+  background-color: #1a1a1a;
   overflow-x: hidden;
 }
 
@@ -478,6 +483,7 @@ h2, h3 {
     text-align: left;
 }
 
+@media screen and (min-width: 800px) {
 .fixedsidebar {
     position:fixed;
     top:64px;
@@ -485,11 +491,14 @@ h2, h3 {
     float: left;
     width: 100%;
   }
-
+}
+@media screen and (min-width: 800px) {
 .main {
   border-left: 3px solid black;
   margin-left:17%; /* Same as the width of the sidenav */
 }
+}
+
 p{
   padding-left: 10px;
   text-align: left;
@@ -502,7 +511,7 @@ p{
 .sidebar h2{
   margin: 0;
   font-weight: : bold;
-  background-color: darkgrey;
+  background-color: black;
   color: white;
   padding-top:10px;
   padding-left: 10px;
@@ -564,18 +573,14 @@ p{
   color: white;
   text-align: center;
 }
-/* Make the about responsive */
-@media screen and (max-width: 800px) {
-    .leftcolumnabout{
-        width: 100%;
-        padding: 0;
-    }
-}
 
+@media screen and (min-width: 800px){
 .leftcolumnabout {
     width:75%;
     border-right: 3px solid black;
 }
+}
+
 .contact h2, .mision h2, .vision h2, .aboutus h2, .science h2, .makes h2, .documentary h2, .founderStory h2{
   margin: 0;
   font-weight: : bold;
@@ -611,6 +616,7 @@ ul{
   font-size: 17px;
 }
 
+@media screen and (min-width: 800px) {
 .rightcolumnabout {
   float: right;
   width: 25%;
@@ -618,10 +624,11 @@ ul{
   overflow-x: hidden;
   margin: 0;
   }
-
+}
 .footerabout {
     padding: 20px;
     text-align: center;
     background: #ddd;
     margin-top: 20px;
 }
+

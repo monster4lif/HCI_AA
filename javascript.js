@@ -97,7 +97,7 @@ const makePageResponsive = function () {
 // console.log(makePageResponsive())
 
 /* Making the sidenav on news fixed after the banner */
-var numnav= 560; //number of pixels before modifying styles
+var numnav= 600; //number of pixels before modifying styles
 
 $(window).bind('scroll', function () {
     if ($(window).scrollTop() > numnav) {
@@ -120,3 +120,17 @@ $(window).bind('scroll', function () {
 });
 
 //Inspired by http://jsfiddle.net/j6odpxsk/
+
+window.addEventListener("resize", function() {
+    if (window.matchMedia("(max-width: 800px)").matches) {
+        console.log("Screen width is at least 800px");
+    } else {
+        $(window).bind('scroll', function () {
+    if ($(window).scrollTop() > numcontact) {
+        $('.rightcolumnabout').addClass('fixedcontact');
+    } else {
+        $('.rightcolumnabout').removeClass('fixedcontact');
+    }
+});;
+    }
+});
