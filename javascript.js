@@ -18,7 +18,15 @@ $(window).load(function () {
 // Ask for a Username and Password when pressing the login button
 function displayLogin() {
   person = prompt('Login \n\nTo interact with the Community and get Personal Support:\n\n Username:', 'Adam');
+  if (person === '' || person === undefined) {
+    alert(`Please fill in your username`);
+    displayLogin();
+  }
   password = prompt('Password:', "*****");
+  if (password === '' || password === undefined) {
+    alert(`You need to fill in your password`);
+    displayLogin();
+  };
   alert(`Welcome, ${person}`);
   hasLoggedIn = true;
 }
