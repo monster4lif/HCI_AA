@@ -22,15 +22,15 @@
 			<a class = "button" onclick="ShowDiv('community')">Social</a>
 			<a class = "button" onclick="ShowDiv('news')">News</a>
 			<a class = "button" onclick="ShowDiv('about')">About</a>
-			<a href="javascript:void(0)" class="icon" onclick="makePageResponsive()"><i class="fa fa-bars"></i></a>
+			<a href="javascript:void(0)" class="icon" onclick="makePageResponsive()"><em class="fa fa-bars"></em></a>
 			<div class="search-container">
 					<button type="submit" onclick="displayLogin()">
-							<i class="material-icons" style="float: left;">account_circle </i>
+							<em class="material-icons" style="float: left;">account_circle </em>
 					</button>
 					<button type="submit">
-							<i class="material-icons" style="float: left;">search</i>
+							<em class="material-icons" style="float: left;">search</em>
 					</button>
-					<input type="text" placeholder="Search A&A..." name="search">
+					<input type="text" placeholder="Search A&A..." name="search" title="searchbar">
 			</div>
 		</div>
 		<div class="homepage">
@@ -111,7 +111,7 @@
 			<h2>Welcome to clothing 4.0, <br>
 			where functionality meets fashion.</h2>
 		</div>
-		<div class="row">	
+		<div class="row">
 			<div class="rightcolumnabout">
 				<div class="contact">
 					<h2>Contact</h2>
@@ -132,7 +132,7 @@
 			<div class="leftcolumnabout">
 				<div class="aboutus">
 					<h2>About us</h2>
-					<p>Hello. We’re ADAM & AOKI, a technology company dedicated to developing next generation smart clothing. We go beyond being a brand. We’re a movement revolutionising the interactions between people and everyday wear. Our innovative clothing range warns users that they are in risk of getting sunburnt. Using specially developed smart fabric, our products detect dangerous UV rays and warn you via a clear colour change. The warning system also takes into account both your skin type and the time it takes you to burn, and doesn’t require phones, apps or electronics. Welcome to clothing 4.0, where functionality meets fashion.</p>			
+					<p>Hello. We’re ADAM & AOKI, a technology company dedicated to developing next generation smart clothing. We go beyond being a brand. We’re a movement revolutionising the interactions between people and everyday wear. Our innovative clothing range warns users that they are in risk of getting sunburnt. Using specially developed smart fabric, our products detect dangerous UV rays and warn you via a clear colour change. The warning system also takes into account both your skin type and the time it takes you to burn, and doesn’t require phones, apps or electronics. Welcome to clothing 4.0, where functionality meets fashion.</p>
 				</div>
 
 				<div class="mision">
@@ -204,7 +204,7 @@
 			<div class="leftcolumn" style="border-right-color: black; border-right-style: solid;">
 				<div class="post">
 					<h2>Adam & Aoki improved their designs for the t-shirts!</h2>
-					<h5>by: @shelly123 on: 6-7-2018</h5>
+					<p><strong>by: @shelly123 on: 6-7-2018</strong></p>
 					<img src="images/community/new_tshirts.jpg" onclick = "noMessages()" style="height: 170px;" class="userimg" alt="A collection of the new t-shirts of A&A">
 					<p>Last friday, the founders of Adam & Aoki showed their new and improved design and we're absolutely loving it!
 					<br> <strong>3 reactions <br> <button onclick="noMessages()" class="communityButton">Read reactions</button>
@@ -212,16 +212,16 @@
 				</div>
 				<div class="post2">
 					<h2>My baby is reacting very badly to the new sunscreen! Please look!</h2>
-					<h5>by: @friendlyNeighbour on: 13-6-2018</h5>
+					<p><strong>by: @friendlyNeighbour on: 13-6-2018</strong></p>
 					<img src= "images/community/dangerous_sunscreen.jpg" onclick = "noMessages()" class="userimg" style="height: 170px;" alt="A picture of 'dangerous' sunscreen">
 					<p>This sunscreen caused my daughter (3yo) to experience extreme rashes and other pains. Has anybody else experienced this? I am going to take her to the doktor now, but I wanted to warn all of you to
-					<i>not</i> use this sunscreen!
+					<em>not</em> use this sunscreen!
 					<br> <strong>3 reactions <br> <button onclick="noMessages()" class="communityButton">Read reactions</button>
 						<button onclick="displayErrorLogin()" class="communityButton">React</button> </strong> </p>
 				</div>
 				<div class="post">
 					<h2>Please don't look at this!</h2>
-					<h5>by: @shelly123 on: 6-7-2018</h5>
+					<p><strong>by: @shelly123 on: 6-7-2018</strong></p>
 					<img src="images/community/last_post.jpg" onclick = "noMessages()" style="height: 170px;" class="userimg" alt="A filler image">
 					<p>Honestly, this last post is a mere filler up. There's only so much you can tell about Adam&Aoki without becoming repetative. We recently started
 					Kickstarter, but by the time a website is lanched, I guess Kickstarter is off the table.
@@ -232,7 +232,7 @@
 			<div class="rightcollumn">
 				<div class="card1">
 					<h2>Bio</h2>
-					<h4>@BulgarianMom</h4>
+					<p><strong>@BulgarianMom</strong></p>
 					<u style="cursor: pointer;" onclick="displayErrorMessages()">Look at my messages (0)</u>
 					<img src="images/community/bulgaria_flag.jpg" class="userimg" style="height: 100px;" alt="The flag of Bulgaria, the profile of the user">
 					<p>Proud mom of 2 lovely little girls, here to talk to other parents to protect our lovely children from the sun.</p>
@@ -275,24 +275,48 @@
 					<img src="images/kidsshirt.jpg" alt="Boy wearing our merchandise, short sleeved">
 					<img src="images/kidsshirt2.jpg" alt="Girl wearing our merchandise, mid arm sleeved">
 					<p>We have new kidsshirt available with our famous sun warning mechanism. Visit the <u onclick="ShowDiv('store')" style="cursor: pointer;">Store</u> now to buy some! Both styles are available for both boys and girls in different sizes.<br><br>
-						<em><a href="#">More Product Announcements</a></em></p>			
+						<em><a href="#">More Product Announcements</a></em></p>
 				</div>
 
 				<div class="companyUpdates">
 					<h2>Company Updates</h2>
-					<p>Our new company update video is out!<br>
-						<div class="video-responsive"><iframe width="854" height="480" src="https://www.youtube.com/embed/WOOWtAeqAwY" allowfullscreen></iframe></div>
-					<br>
-					<em><a href="#">More Company Updates</a></em></p>
+					<p>
+            Our new company update video is out!<br>
+          </p>
+					<div class="video-responsive"><iframe width="854" height="480"
+            src="https://www.youtube.com/embed/WOOWtAeqAwY" allowfullscreen>
+          </iframe></div>
+          <p>
+  					<br>
+  					<em><a href="#">More Company Updates</a></em>
+          </p>
 				</div>
 
 				<div class="newScience">
 					<h2>New Science</h2>
 					<p><strong>Sunburn and p53 in the onset of skin cancer</strong><br>
-						SQUAMOUS cell carcinoma of the skin (SCC) can progress by stages: sun-damaged epidermis, with individual disordered keratin-ocytes; actinic keratosis (AK), spontaneously regressing keratin-ized patches having aberrant cell differentiation and proliferation; carcinoma in situ; SCC and metastasis1–3. To understand how sunlight acts as a carcinogen, we determined the stage at which sunlight mutates the p53 tumour-suppressor gene and identified a function for p53 in skin. The p53 mutations induced by ultraviolet radiation and found in >90% of human SCCs4,5 were present in AKs. Inactivating p53 in mouse skin reduced the appearance of sunburn cells6, apoptotic keratinocytes generated by overexposure to ultraviolet. Skin thus appears to possess a p53-dependent 'guardian-of-the-tissue' response to DNA damage which aborts precancerous cells. If this response is reduced in a single cell by a prior p53 mutation, sunburn can select for clonal expansion of the p53-mutated cell into the AK. Sunlight can act twice: as tumour initiator and tumour promoter.<br>
-						<i>Ziegler, Annemarie, et al. "Sunburn and p53 in the onset of skin cancer." Nature 372.6508 (1994): 773.</i><br>
-						<em><a href="https://www.nature.com/articles/372773a0">Learn more</a></em><br>
-					<br>
+						SQUAMOUS cell carcinoma of the skin (SCC) can progress by stages:
+            sun-damaged epidermis, with individual disordered keratin-ocytes;
+            actinic keratosis (AK), spontaneously regressing keratin-ized
+            patches having aberrant cell differentiation and proliferation;
+            carcinoma in situ; SCC and metastasis1–3. To understand how
+            sunlight acts as a carcinogen, we determined the stage at which
+            sunlight mutates the p53 tumour-suppressor gene and identified a
+            function for p53 in skin. The p53 mutations induced by ultraviolet
+            radiation and found in >90% of human SCCs4,5 were present in AKs.
+            Inactivating p53 in mouse skin reduced the appearance of sunburn
+            cells6, apoptotic keratinocytes generated by overexposure to
+            ultraviolet. Skin thus appears to possess a p53-dependent
+            'guardian-of-the-tissue' response to DNA damage which aborts
+            precancerous cells. If this response is reduced in a single cell
+            by a prior p53 mutation, sunburn can select for clonal expansion
+            of the p53-mutated cell into the AK. Sunlight can act twice: as
+            tumour initiator and tumour promoter.<br>
+						<em>Ziegler, Annemarie, et al. "Sunburn and p53 in the onset of
+              skin cancer." Nature 372.6508 (1994): 773.</em><br>
+						<em><a href="https://www.nature.com/articles/372773a0">Learn
+              more</a>
+            </em><br><br>
 						<em><a href="#">More New Science</a></em></p>
 				</div>
 

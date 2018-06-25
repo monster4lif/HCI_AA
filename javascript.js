@@ -6,7 +6,7 @@ let hasLoggedIn = false;
 
 // Play the loading gif and then show the 'homepage' div
 $(window).load(function () {
-    $("#loader").delay(1000).fadeOut("slow");
+  $("#loader").delay(1000).fadeOut("slow");
   for (i = 0; i < pages.length; i++) {
     // console.log(i);
     document.getElementsByClassName(pages[i])[0].style.display = 'none';
@@ -17,10 +17,10 @@ $(window).load(function () {
 
 // Ask for a Username and Password when pressing the login button
 function displayLogin() {
-    person = prompt('Login \n\nTo interact with the Community and get Personal Support:\n\n Username:', 'Adam');
-    password = prompt('Password:', "*****");
-    alert(`Welcome, ${person}`);
-    hasLoggedIn = true;
+  person = prompt('Login \n\nTo interact with the Community and get Personal Support:\n\n Username:', 'Adam');
+  password = prompt('Password:', "*****");
+  alert(`Welcome, ${person}`);
+  hasLoggedIn = true;
 }
 
 // Open a webpage after clicking the hyperlink, and immediately scrolling to the top of the page
@@ -34,13 +34,13 @@ function ShowDiv(div) {
   // Have the currently shown page change colour in the navigation bar
   for (let i = 0; i<links.length; i++) {
     links[i].addEventListener('click', function () {
-          let activeButton = document.getElementsByClassName('active');
-          this.className += ' active';
-          activeButton[0].className = activeButton[0].className.replace(' active', '');
-        })
+      let activeButton = document.getElementsByClassName('active');
+      this.className += ' active';
+      activeButton[0].className = activeButton[0].className.replace(' active', '');
+    })
         // console.log(links[i])
-    };
-  
+  };
+
   //console.log(i);
   for (let i = 0; i < pages.length; i++){
     document.getElementsByClassName(pages[i])[0].style.display = 'none';
@@ -86,7 +86,7 @@ const goToTopPage = function () {
 
 // Make the page responsive: hide the links in the navigation bar, exept for the 'hamburger' icon
 const makePageResponsive = function () {
-  let menu = document.getElementById('menu'); // Find the menu 
+  let menu = document.getElementById('menu'); // Find the menu
   if (menu.className === 'menu') {
     menu.className = 'menu responsive';
   } else {
@@ -100,11 +100,11 @@ const makePageResponsive = function () {
 var numnav= 600; //number of pixels before modifying styles
 
 $(window).bind('scroll', function () {
-    if ($(window).scrollTop() > numnav) {
-        $('.leftcolumnnews').addClass('fixedsidebar');
-    } else {
-        $('.leftcolumnnews').removeClass('fixedsidebar');
-    }
+  if ($(window).scrollTop() > numnav) {
+    $('.leftcolumnnews').addClass('fixedsidebar');
+  } else {
+    $('.leftcolumnnews').removeClass('fixedsidebar');
+  }
 });
 //Inspired by http://jsfiddle.net/j6odpxsk/
 
@@ -112,42 +112,11 @@ $(window).bind('scroll', function () {
 var numcontact = 600; //number of pixels before modifying styles
 
 $(window).bind('scroll', function () {
-    if ($(window).scrollTop() > numcontact) {
-        $('.rightcolumnabout').addClass('fixedcontact');
-    } else {
-        $('.rightcolumnabout').removeClass('fixedcontact');
-    }
+  if ($(window).scrollTop() > numcontact) {
+    $('.rightcolumnabout').addClass('fixedcontact');
+  } else {
+    $('.rightcolumnabout').removeClass('fixedcontact');
+  }
 });
 
 //Inspired by http://jsfiddle.net/j6odpxsk/
-
-$(function() {
-
-    var $allVideos = $("iframe[src^='//player.vimeo.com'], iframe[src^='//www.youtube.com'], object, embed"),
-    $fluidEl = $("figure");
-
-  $allVideos.each(function() {
-
-    $(this)
-      // jQuery .data does not work on object/embed elements
-      .attr('data-aspectRatio', this.height / this.width)
-      .removeAttr('height')
-      .removeAttr('width');
-
-  });
-
-  $(window).resize(function() {
-
-    var newWidth = $fluidEl.width();
-    $allVideos.each(function() {
-
-      var $el = $(this);
-      $el
-          .width(newWidth)
-          .height(newWidth * $el.attr('data-aspectRatio'));
-
-    });
-
-  }).resize();
-
-});
