@@ -135,8 +135,8 @@ h2, h3 {
 }
 
 .intro h2, .introStore h2, .introcommunity h2,  .intronews h2, .introabout h2{
-  color: white;
-  -webkit-text-stroke: 2px black;
+  color: black;
+  /*-webkit-text-stroke: 2px black;*/
   /* text-stroke: 2px black; */
 }
 
@@ -279,7 +279,7 @@ h2, h3 {
     font-size: large;
   }
 
-  /* When the screen is small, hide all links in menu execpt home, 
+  /* When the screen is small, hide all links in menu execpt home,
   and show the hamburger icon */
   .menu.responsive a.button:not(:nth-child(2)){display:none;}
   .menu a.icon {
@@ -287,13 +287,13 @@ h2, h3 {
       display: block;
       position: relative;
       align-items: center;
-  } 
+  }
 
     .icon a:hover, .button a:hover {
         background-color: black;
-        
+
     }
-    
+
   .menu.responsive a.button:nth-child(2){
       text-align: center;
     }
@@ -427,7 +427,7 @@ h2, h3 {
     cursor: pointer; /* Add a mouse pointer on hover */
     padding: 15px; /* Some padding */
     border-radius: 10px; /* Rounded corners */
-    font-size: 18px; /* Increase font size */    
+    font-size: 18px; /* Increase font size */
 }
 
 /* News styling */
@@ -500,7 +500,7 @@ p{
   padding-left: 10px;
   text-align: left;
 }
- 
+
 .productAnnouncements ,.newScience{
     background-color: #e6dfd9;
 
