@@ -21,7 +21,7 @@
 			<p onclick="ShowDiv('homepage')" style="cursor: pointer;" class="button">
         <img class="logo" src="images/logo.jpg"
         style="width: 6%; float: left; margin-right: 1%; margin-left: 1%"
-        alt="The A&A logo">
+        alt="The A&A logo" title="logo">
       </p>
 			<a class = "button active" onclick="ShowDiv('homepage')">Home</a>
 			<a class = "button" onclick="ShowDiv('store')">Store</a>
@@ -32,12 +32,12 @@
         <em class="fa fa-bars"></em>
       </a>
 			<div class="search-container">
-				<button type="submit" onclick="displayLogin()">
+				<button type="submit" onclick="displayLogin()" title="Account">
 					<em class="material-icons" style="float: left;">
             account_circle
           </em>
 				</button>
-				<button type="submit">
+				<button type="submit" title="search">
 					<em class="material-icons" style="float: left;">search</em>
 				</button>
 				<input type="text" placeholder="Search A&A..." name="search"
