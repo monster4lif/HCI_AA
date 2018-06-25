@@ -126,7 +126,7 @@ h2, h3 {
 }
 
 .introStore{
-    background-image: url("images/shop.jpg");
+    background-image: url("images/introstore2.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -273,6 +273,10 @@ h2, h3 {
     float: none;
     width: 90%;
 
+  }
+
+  .storeShopify{
+    display: none;
   }
 
   h2, h3{
